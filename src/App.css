@@ -1,0 +1,17 @@
+@import "tailwindcss";
+
+@keyframes fall {
+  0% {
+    transform: translateY(-100%); /* Start above the viewport */
+    opacity: 0; /* Start invisible */
+  }
+  100% {
+    transform: translateY(0); /* End at its original position */
+    opacity: 1; /* End fully visible */
+  }
+}
+
+.fall-animation {
+  animation: fall 1s ease forwards; /* Adjust duration and easing as needed */
+}
+
